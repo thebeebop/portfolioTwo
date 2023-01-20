@@ -1,3 +1,4 @@
+import Header from "./header";
 export default function Projects() {
   const projects = [
     { name: "Weather widget", type: "WEB APP", img: "" },
@@ -16,15 +17,13 @@ export default function Projects() {
           visualisation.
         </p>
       </div>
-      {projects.map((project) => {
+      {projects.map((project, i) => {
         return (
-          <>
-            <div className="card">
-              <h3 className="card-subtitle">{project.type}</h3>
-              <h1>{project.name}</h1>
-              <img src={project.img} />
-            </div>
-          </>
+          <div className="card" key={i}>
+            <h3 className="card-subtitle">{project.type}</h3>
+            <h1>{project.name}</h1>
+            <img src={project.img} />
+          </div>
         );
       })}
     </div>
