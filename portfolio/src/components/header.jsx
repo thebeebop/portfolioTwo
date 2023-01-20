@@ -1,16 +1,17 @@
 export default function Header() {
   return (
     <>
-      <nav style={{ height: 70 }}>
+      <nav style={{ height: 70, width: "100%" }}>
         <ul
           style={{
             height: "100%",
+            fontFamily: "Lato",
+            fontWeight: "100",
             listStyle: "none",
             display: "flex",
             justifyContent: "space-around",
             padding: 20,
             color: "white",
-            backgroundColor: "black",
           }}
         >
           <li>Projects</li>
