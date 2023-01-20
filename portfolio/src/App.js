@@ -1,10 +1,13 @@
 import Header from "./components/header";
-
+import Projects from "./components/projects";
 function App() {
   return (
-    <div className="app">
+    <>
       <Header />
-    </div>
+      <div className="app">
+        <Projects />
+      </div>
+    </>
   );
 }
 
