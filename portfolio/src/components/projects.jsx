@@ -1,4 +1,4 @@
-import Header from "./header";
+import "../style/projects.css";
 export default function Projects() {
   const projects = [
     { name: "Weather widget", type: "WEB APP", img: "" },

@@ -1,4 +1,7 @@
 import profilePic from "../images/profile pic.jpg";
+import "../style/about.css";
+
+// Could do with a back to top functionality
 export default function About() {
   return (
     <>

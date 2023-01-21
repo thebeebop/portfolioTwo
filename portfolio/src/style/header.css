@@ -1,0 +1,15 @@
+nav {
+    height: 70px;
+    width: 100%
+}
+
+ul {
+    height: 100%;
+    font-family: Lato, sans-serif;
+    font-weight: 200;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20;
+    color: white;
+}
