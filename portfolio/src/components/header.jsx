@@ -1,21 +1,10 @@
 import { Link } from "react-router-dom";
-
+import "../style/header.css";
 export default function Header() {
   return (
     <>
-      <nav style={{ height: 70, width: "100%" }}>
-        <ul
-          style={{
-            height: "100%",
-            fontFamily: "Lato",
-            fontWeight: "100",
-            listStyle: "none",
-            display: "flex",
-            justifyContent: "space-around",
-            padding: 20,
-            color: "white",
-          }}
-        >
+      <nav>
+        <ul>
           <li>
             <Link to="/" style={{ textDecoration: "none", color: "white" }}>
               <p>Projects</p>
@@ -29,7 +18,14 @@ export default function Header() {
               <p>About</p>
             </Link>
           </li>
-          <li>Contact</li>
+          <li>
+            <Link
+              to="/contact"
+              style={{ textDecoration: "none", color: "white" }}
+            >
+              <p>Contact</p>
+            </Link>
+          </li>
           <li>Linkedin</li>
         </ul>
       </nav>

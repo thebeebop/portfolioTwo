@@ -1,0 +1,32 @@
+.introduction {
+
+    height: 150px;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .introduction-title {
+    font-family: "Butler";
+    font-weight: 800;
+    font-size: 50px;
+  }
+  
+  .card {
+    text-align: left;
+    font-family: 'Butler';
+    font-weight: 700;
+    height: 600px;
+    border-radius: 5px;
+    width: 100%;
+    margin-bottom: 60px;
+    padding: 40px;
+    box-shadow: 4px 4px 8px 
+  }
+  
+  .card-subtitle {
+    font-size: 15px;
+    font-family: 'Lato', sans-serif;
+    color: rgb(0, 0, 0, 0.5);
+    margin-bottom: 8px;
+  }

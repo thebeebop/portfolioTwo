@@ -1,0 +1,129 @@
+.about-me-header {
+    text-align: left;
+    font-size: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .profile-pic {
+    border-radius: 10px;
+    height: 380px;
+  
+  }
+  
+  .image {
+    border-radius: 10px;
+    height: 100%;
+    width: 100%;
+  }
+  
+  .about-header {
+    /* text-align: left; */
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 45px;
+  }
+  
+  .brief-history-section {
+  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+  
+  }
+  
+  .brief-history-section p {
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+  
+  .arrow {
+    height: 120px;
+    width: 3px;
+    background-color: black;
+  }
+  
+  .mock-image {
+    margin-top: 10px;
+    height: 80px;
+    width: 80px;
+    background-color: brown;
+    border-radius: 10px;
+  }
+  
+  .mock-image-two {
+    margin-top: 10px;
+    height: 100%;
+    width: 100%;
+    background-color: brown;
+    border-radius: 10px;
+  }
+  
+  .mock-image-three {
+    margin-top: 10px;
+    height: 200px;
+    width: 200px;
+    background-color: brown;
+    border-radius: 10px;
+  }
+  
+  
+  .tech-skills-section {
+  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+    margin-top: 30px;
+  }
+  
+  .tech-skills-header {
+  
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 45px;
+  
+  }
+  
+  .tech-skills-grid {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+  }
+  
+  .vanity-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+    margin-top: 30px;
+  }
+  
+  .vanity-grid {
+    display: grid;
+    height: 500px;
+    width: 100%;
+    grid-template-rows: 1fr 1fr 1fr ;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  
+  }
+  
+  .books-read-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+    margin-top: 30px;
+  }
+  
+  .books-reading-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+    margin-top: 30px;
+  }
+  
