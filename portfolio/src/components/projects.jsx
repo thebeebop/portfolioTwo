@@ -5,15 +5,16 @@ export default function Projects() {
     { name: "Calculator", type: "WEB APP", img: "" },
     { name: "Hangman", type: "WEB APP", img: "" },
     { name: "Northcoders News", type: "WEB APP", img: "" },
-    { name: "Salford Red Devils", type: "Motion Design", img: "" },
+    { name: "Salford Red Devils", type: "MOTION DESIGN", img: "" },
   ];
   return (
     <div>
       <div className="introduction">
         <h1 className="introduction-title">Hi! I'm Lewis.</h1>
         <p>
-          A Junior Front End Developer with experience in JavaScript (ES6),
-          React, HTML5 & CSS3 with a keen eye for styling and data
+          I'm a Junior Front End Developer with experience <br></br> in
+          JavaScript (ES6), React, HTML5 & CSS3.<br></br> With a background in
+          Graphic Design, I have<br></br> a keen eye for styling and data
           visualisation.
         </p>
       </div>

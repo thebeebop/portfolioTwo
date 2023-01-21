@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export default function Header() {
   return (
     <>
@@ -14,8 +16,19 @@ export default function Header() {
             color: "white",
           }}
         >
-          <li>Projects</li>
-          <li>About</li>
+          <li>
+            <Link to="/" style={{ textDecoration: "none", color: "white" }}>
+              <p>Projects</p>
+            </Link>
+          </li>
+          <li>
+            <Link
+              to="/about"
+              style={{ textDecoration: "none", color: "white" }}
+            >
+              <p>About</p>
+            </Link>
+          </li>
           <li>Contact</li>
           <li>Linkedin</li>
         </ul>

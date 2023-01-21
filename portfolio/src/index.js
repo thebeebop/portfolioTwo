@@ -2,16 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 import App from "./App";
-import Projects from "./components/projects";
 import reportWebVitals from "./reportWebVitals";
-
-// const router = createBrowserRouter([
-//   {
-//     path: "/",
-//     element: <Projects />,
-//     children: [{ path: "projects", element: <Projects /> }],
-//   },
-// ]);
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
