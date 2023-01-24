@@ -16,12 +16,13 @@
     text-align: left;
     font-family: 'Butler';
     font-weight: 700;
-    height: 600px;
+    height: 500px;
     border-radius: 5px;
     width: 100%;
     margin-bottom: 60px;
     padding: 40px;
-    box-shadow: 4px 4px 8px 
+    box-shadow: 3px 3px 10px;
+    color:rgb(107, 106, 106)
   }
   
   .card-subtitle {

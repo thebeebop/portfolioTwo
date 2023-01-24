@@ -1,0 +1,177 @@
+header {
+    width: 100%;   
+    margin-bottom: 20px; 
+}
+
+.mother-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1;
+}
+
+
+.main-image {
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    min-width: 100%;
+    background-color: brown;
+    margin-bottom: 30px;
+    
+}
+
+.main-title {
+    font-size: 40px;
+    margin-bottom: 5px;
+}
+
+.title-container {
+    padding: 15px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    height: 100px;
+    margin-top: 50px;
+}
+
+.technologies-used {
+    padding: 15px;
+    width: 100%;
+    height: 150px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.button-container {
+    position: absolute;
+    height: 400px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.button {
+    height: 50px;
+    padding: 15px;
+    border-radius: 10px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.continue-reading {
+    width: 100%;
+    min-height: 50px;
+    color: rgb(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    }
+
+.goal {
+    padding: 20px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    background-color: bisque;
+}
+
+
+.development {
+    padding: 20px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+
+}
+
+.main-image-two {
+    display: flex;
+    padding: 20px;
+    height: 300px;
+    width: 100%;
+    background-color: brown;
+    margin-bottom: 30px;
+    border-radius: 10px;
+}
+
+.what-i-learnt {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+
+}
+
+.list {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    color: black;
+    list-style:disc;
+    flex: 1;
+    margin-bottom: 20px;
+}
+
+.list li {
+    margin-bottom: 8px;
+    font-weight: 400;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
+    flex: 1;
+}
+
+.hidden-element {
+    display: none;
+   
+}
+
+.visible-element {
+    display:flex;
+    flex-direction: column;
+}
+
+.dynamic-rendering {
+    padding: 20px;
+    /* margin-top: 30px; */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.result {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    background-color: rgb(235, 220, 245);
+}
+
+.github-section {
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+}
