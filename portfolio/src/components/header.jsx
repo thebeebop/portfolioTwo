@@ -4,7 +4,7 @@ export default function Header() {
   return (
     <>
       <nav>
-        <ul>
+        <ul className="nav-bar">
           <li>
             <Link to="/" style={{ textDecoration: "none", color: "white" }}>
               <p>Projects</p>
@@ -26,7 +26,7 @@ export default function Header() {
               <p>Contact</p>
             </Link>
           </li>
-          <li>Linkedin</li>
+          <li>Twitter</li>
         </ul>
       </nav>
     </>
