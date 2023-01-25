@@ -9,7 +9,9 @@ export default function About() {
         <div className="profile-pic">
           <img src={profilePic} alt="" className="image" />
         </div>
-        <h1 className="about-header">Designer turned Software Developer.</h1>
+        <h1 className="about-header">
+          I'm a Designer turned Software Developer.
+        </h1>
         <section className="brief-history-section">
           <div className="mock-image"></div>
           <p>
