@@ -8,8 +8,14 @@ export default function Projects() {
       img: "",
       path: "projects/weather-widget",
     },
-    { name: "Calculator", type: "WEB APP", img: "" },
-    { name: "Hangman", type: "WEB APP", img: "" },
+    { name: "Hangman", type: "WEB APP", img: "", path: "projects/hangman" },
+    {
+      name: "Calculator",
+      type: "WEB APP",
+      img: "",
+      path: "projects/calculator",
+    },
+    ,
     { name: "Northcoders News", type: "WEB APP", img: "" },
     { name: "Salford Red Devils", type: "MOTION DESIGN", img: "" },
   ];

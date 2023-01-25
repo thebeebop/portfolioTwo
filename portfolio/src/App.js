@@ -3,6 +3,7 @@ import Projects from "./components/projects";
 import About from "./components/About";
 import Contact from "./components/Contact";
 import WeatherWidget from "./components/projects/WeatherWidget";
+import Calculator from "./components/projects/Calculator";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
           path="/projects/weather-widget"
           element={<WeatherWidget />}
         ></Route>
+        <Route path="/projects/calculator" element={<Calculator />}></Route>
         <Route path="about" element={<About />}></Route>
         <Route path="contact" element={<Contact />}></Route>
       </Routes>
