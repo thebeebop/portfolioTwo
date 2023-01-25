@@ -21,8 +21,15 @@ export default function WeatherWidget() {
       <div className="mother-container">
         <header className="header">
           <div className="main-image">
+            <div className="black-banner-container">
+              <div className="black-banner"></div>
+            </div>
             <img height="100%" alt="repeating video of app in use" />
             <div className="button-container">
+              <div className="github-container">
+                <img className="github-img" alt="" />
+              </div>
+
               <a
                 href="https://weather-application-1.netlify.app/"
                 target="blank"
@@ -34,8 +41,8 @@ export default function WeatherWidget() {
           <div className="title-container">
             <h1 className="main-title">Weather widget</h1>
             <p>
-              A fully responsive web app built with React, styled with CSS3 &
-              Materials UI, using the OpenWeatherMap's API Onecall 3.0.
+              A fully responsive web app built with React using the
+              OpenWeatherMap's API Onecall 3.0.
             </p>
           </div>
         </header>
@@ -78,9 +85,7 @@ export default function WeatherWidget() {
           </section>
 
           <section className="development">
-            <h1 style={{ marginBottom: 10, fontSize: 30 }}>
-              Development process:
-            </h1>
+            <h1 style={{ marginBottom: 10, fontSize: 30 }}>Initial Stages:</h1>
             <p style={{ marginBottom: 50 }}>
               I used the design application Figma, to design the UI layout as
               well as to draw the state component tree. I used Trello and the
@@ -117,9 +122,29 @@ export default function WeatherWidget() {
             <div className="main-image-two"></div>
           </section>
 
+          <section className="challenges">
+            <h1 style={{ marginBottom: 10, fontSize: 30 }}>Challenges:</h1>
+            <p style={{ marginBottom: 0 }}>
+              Rendering the correct date and time.
+            </p>
+            <ul className="list">
+              <li>
+                <p>
+                  <strong>PROBLEM:</strong>
+                </p>
+              </li>
+              <li>
+                <p>
+                  <strong>SOLUTION:</strong>
+                </p>
+              </li>
+            </ul>
+            <div className="main-image-two"></div>
+          </section>
+
           <section className="result">
             <h1 style={{ marginBottom: 10, fontSize: 30 }}>Result:</h1>
-            <p>A fully responsive weather web application built with React.</p>
+            <p>A fully responsive web application built with React.</p>
             <ul className="list">
               <li>React was used to create the front-end architecture.</li>
               <li>The overall UI was styled with Vanilla CSS.</li>
@@ -131,7 +156,6 @@ export default function WeatherWidget() {
                 OpenWeatherMap API.
               </li>
             </ul>
-            <div className="main-image-two"></div>
           </section>
 
           <section className="what-i-learnt">

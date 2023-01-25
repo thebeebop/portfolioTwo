@@ -21,8 +21,14 @@ export default function Calculator() {
       <div className="mother-container">
         <header className="header">
           <div className="main-image">
+            <div className="black-banner-container">
+              <div className="black-banner"></div>
+            </div>
             <img height="100%" alt="repeating video of app in use" />
             <div className="button-container">
+              <div className="github-container">
+                <img className="github-img" alt="" />
+              </div>
               <a href="https://calculao.netlify.app/" target="blank">
                 <button className="button">View App</button>
               </a>
@@ -70,9 +76,7 @@ export default function Calculator() {
           </section>
 
           <section className="development">
-            <h1 style={{ marginBottom: 10, fontSize: 30 }}>
-              Development process:
-            </h1>
+            <h1 style={{ marginBottom: 10, fontSize: 30 }}>Initial Stages:</h1>
             <p style={{ marginBottom: 50 }}>
               I used the VSCode plug-in: TLDraw to design, arrange and workout
               the component state tree. I used Trello and the Kanban method to
@@ -80,6 +84,24 @@ export default function Calculator() {
               individual tickets
             </p>
             <div className="main-image-two"></div>
+            <div className="main-image-two"></div>
+          </section>
+
+          <section className="IOS-functionality">
+            <h1 style={{ marginBottom: 10, fontSize: 30 }}>
+              IOS Functionality:
+            </h1>
+            <p style={{ marginBottom: 50 }}>
+              Not only were the aesthetics of the calculator taken from the IOS
+              design, but the functionality too. The IOS calculator allows the
+              user to input large equations, uninterupted, without ever having
+              to press the equals input. This is because it will keep track of
+              what numbers have been pressed and with what operations. So, when
+              a user decides to input a new operator, the IOS calculator will
+              immediately calculate and update the existing equation and present
+              the latest sum on the display. I looked to replicate this
+              functionality in my own calculator.
+            </p>
             <div className="main-image-two"></div>
           </section>
 
@@ -112,24 +134,6 @@ export default function Calculator() {
             <div className="main-image-two"></div>
           </section>
 
-          <section className="IOS-functionality">
-            <h1 style={{ marginBottom: 10, fontSize: 30 }}>
-              IOS Functionality:
-            </h1>
-            <p style={{ marginBottom: 50 }}>
-              Not only were the aesthetics of the calculator taken from the IOS
-              design, but the functionality too. The IOS calculator allows the
-              user to input large equations, uninterupted, without ever having
-              to press the equals input. This is because it will keep track of
-              what numbers have been pressed and with what operations. So, when
-              a user decides to input a new operator, the IOS calculator will
-              immediately calculate and update the existing equation and present
-              the latest sum on the display. I looked to replicate this
-              functionality in my own calculator.
-            </p>
-            <div className="main-image-two"></div>
-          </section>
-
           <section className="result">
             <h1 style={{ marginBottom: 10, fontSize: 30 }}>Result:</h1>
             <p>
@@ -139,22 +143,16 @@ export default function Calculator() {
               <li>React was used to create the front-end architecture.</li>
               <li>The overall UI was styled with Vanilla CSS.</li>
             </ul>
-            <div className="main-image-two"></div>
           </section>
 
           <section className="what-i-learnt">
             <h1 style={{ marginTop: 20, fontSize: 30 }}>What I learnt:</h1>
             <ul className="list">
-              <li>How to plan and make use of a state-component tree.</li>
-              <li>
-                How to handle state and pass props to update state variables.
-              </li>
-              <li>How to use useEffect to update state values in real time.</li>
-              <li>How to better make use of JavaScript’s Math object.</li>
-              <li>
-                Understanding the difference between stateful and stateless
-                components.
-              </li>
+              <li>How to manipulate the DOM using JavaScript.</li>
+              <li>How to manage Inputs & Outputs.</li>
+              <li>How to use array methods such as: .filter, .includes etc.</li>
+              <li>How to create responsive designs using flexbox and grids.</li>
+              <li>How to make a responsive design using CSS3.</li>
             </ul>
             <p
               className="continue-reading"
