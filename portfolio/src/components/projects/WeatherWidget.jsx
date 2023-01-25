@@ -1,6 +1,7 @@
 import "../../style/projects-style/weather-widget.css";
 import { useState, useRef, useEffect } from "react";
 import { Element, scroller } from "react-scroll";
+import caluclateTimeImg from "../../images/calculateTime.png";
 
 export default function WeatherWidget() {
   const [bool, setBool] = useState(false);
@@ -125,21 +126,26 @@ export default function WeatherWidget() {
           <section className="challenges">
             <h1 style={{ marginBottom: 10, fontSize: 30 }}>Challenges:</h1>
             <p style={{ marginBottom: 0 }}>
-              Rendering the correct date and time.
+              Renderring the correct background image based on the current local
+              time proved to be very challenging.
+            </p>
+            <p style={{ marginTop: 20 }}>
+              <strong>SOLUTION:</strong>
             </p>
             <ul className="list">
               <li>
-                <p>
-                  <strong>PROBLEM:</strong>
-                </p>
+                Using the current local time which was delivered by the API,
+                create a set of conditions that would determine whether that
+                location was covered in sun or not.
               </li>
               <li>
-                <p>
-                  <strong>SOLUTION:</strong>
-                </p>
+                Have CSS classes saved as variables that would update
+                accordingly.{" "}
               </li>
             </ul>
-            <div className="main-image-two"></div>
+            <div className="main-image-two">
+              <img src={caluclateTimeImg} width="100%" />
+            </div>
           </section>
 
           <section className="result">
