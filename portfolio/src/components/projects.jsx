@@ -16,7 +16,12 @@ export default function Projects() {
       path: "projects/calculator",
     },
     ,
-    { name: "Northcoders News", type: "WEB APP", img: "" },
+    {
+      name: "The Daily Dose (Northcoders News)",
+      type: "WEB APP",
+      img: "",
+      path: "projects/northcoders-news",
+    },
     { name: "Salford Red Devils", type: "MOTION DESIGN", img: "" },
   ];
   return (

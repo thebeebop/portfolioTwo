@@ -5,6 +5,7 @@ import Contact from "./components/Contact";
 import WeatherWidget from "./components/projects/WeatherWidget";
 import Calculator from "./components/projects/Calculator";
 import Hangman from "./components/projects/Hangman";
+import NorthcodersNews from "./components/projects/NorthcodersNews";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
@@ -20,6 +21,10 @@ function App() {
         ></Route>
         <Route path="/projects/calculator" element={<Calculator />}></Route>
         <Route path="/projects/hangman" element={<Hangman />}></Route>
+        <Route
+          path="/projects/northcoders-news"
+          element={<NorthcodersNews />}
+        ></Route>
         <Route path="about" element={<About />}></Route>
         <Route path="contact" element={<Contact />}></Route>
       </Routes>
