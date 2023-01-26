@@ -99,7 +99,7 @@ export default function WeatherWidget() {
           </section>
 
           <section className="github-section">
-            <h1 style={{ marginBottom: 10, fontSize: 30 }}>Github:</h1>
+            <h1 style={{ marginBottom: 10, fontSize: 30 }}>GitHub:</h1>
             <p style={{ marginBottom: 50 }}>
               I built new features for the app incrementally, using git for the
               verion control and making frequent commits to the repository
