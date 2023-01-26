@@ -92,7 +92,7 @@ export default function Hangman() {
           <section className="game-logic">
             <h1 style={{ marginBottom: 10, fontSize: 30 }}>Game Logic:</h1>
             <p style={{ marginBottom: 0 }}>
-              This game follows the exact same logic of the original hangman.
+              This game follows similar logic to that of the original hangman.
             </p>
             <ul className="list-numbers">
               <li>
