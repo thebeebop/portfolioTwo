@@ -1,34 +1,43 @@
-.app-two {
-
+.mother-container-about {
   height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
 }
+.title {
+  height: 160px;
+  margin-top: 30px;
 
+}
 .background {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 250px;
   background-color: bisque;
 }
 
 .contact-info-container {
-  padding: 20px;
-    margin-top: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
     height: 150px;
     width: 100%;
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
     grid-template-columns: 100%;
     gap: 20px;
 }
 
 .card-small {
-    text-align: left;
+  display: flex;
+  align-items: center;
     font-family: 'Lato';
     font-weight: 700;
     height: 100%;
     border-radius: 5px;
     width: 100%;
-    padding: 40px;
+    padding: 20px;
     background-color: white;
     border-radius: 10px;
   }
@@ -41,11 +50,38 @@
   }
 
   .contact-info-container-two {
-    margin-top: 40px;
-    height: 100px;
+    margin-bottom: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 50px;
     width: 100%;
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .linked-in-logo {
+    height: 60px;
+    width: 60px;
+    background-color: black;
+  }
+
+  .github-logo {
+    height: 60px;
+    width: 60px;
+    background-color: black;
+  }
+
+  .email-logo {
+    height: 30px;
+    width: 30px;
+    background-color: black;
+    margin-right: 10px;
+  }
+
+  .phone-logo {
+    height: 30px;
+    width: 30px;
+    background-color: black;
+    margin-right: 10px;
   }

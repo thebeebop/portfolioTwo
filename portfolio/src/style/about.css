@@ -1,9 +1,4 @@
-.about-me-header {
-    text-align: left;
-    font-size: 50px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-  }
+
 
   .container-top {
     display: flex;
@@ -27,14 +22,16 @@
   }
   
   .about-header {
-    /* text-align: left; */
+    text-align: left;
     margin-top: 30px;
     margin-bottom: 30px;
     font-size: 45px;
   }
   
+  /* hidden element: */
   .brief-history-section {
-    padding: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
     margin-top: 100px;
     display: flex;
     flex-direction: column;
@@ -47,38 +44,22 @@
     margin-bottom: 10px;
     margin-top: 10px;
   }
-  
-  .arrow {
-    height: 120px;
-    width: 3px;
-    background-color: black;
-  }
-  
-  .mock-image {
-    margin-top: 10px;
+
+  .history-section-logos {
+    margin-bottom: 20px;
+    margin-top: 30px;
     height: 80px;
     width: 80px;
     background-color: brown;
     border-radius: 10px;
   }
   
-  .mock-image-two {
-    margin-top: 10px;
-    height: 100%;
-    width: 100%;
-    background-color: brown;
-    border-radius: 10px;
+  .arrow {
+    height: 120px;
+    width: 3px;
+    background-color: black;
   }
-  
-  .mock-image-three {
-    margin-top: 10px;
-    height: 200px;
-    width: 200px;
-    background-color: brown;
-    border-radius: 10px;
-  }
-  
-  
+    
   .tech-skills-section {
   
     display: flex;
@@ -88,19 +69,19 @@
     margin-top: 30px;
   }
   
-  .tech-skills-header {
-  
-    margin-top: 30px;
-    margin-bottom: 30px;
-    font-size: 45px;
-  
-  }
-  
   .tech-skills-grid {
     display: grid;
     grid-template-rows: 1fr 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 10px;
+  }
+
+  .tech-image {
+   
+    height: 80px;
+    width: 80px;
+    background-color: brown;
+    border-radius: 10px;
   }
   
   .vanity-section {
@@ -112,18 +93,41 @@
   }
   
   .vanity-grid {
-    padding: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
     display: grid;
     height: 500px;
     width: 100%;
     grid-template-rows: 1fr 1fr 1fr ;
     grid-template-columns: 1fr 1fr;
-    gap: 10px;
-  
+    gap: 20px;
   }
-  
+
+  .vanity-logos {
+    margin-bottom: 10px;
+    height: 50px;
+    width: 50px;
+    background-color: black;
+  }
+
+  .vanity-images {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+
+  }
+
   .books-read-section {
-    padding: 20px;
+  
+    padding-left: 20px;
+    padding-right: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -131,8 +135,21 @@
     margin-top: 30px;
   }
   
+  .books-grid {
+    padding-left: 20px;
+    padding-right: 20px;
+    display: grid;
+    height: 600px;
+    width: 100%;
+    grid-template-rows: 1fr 1fr 1fr ;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
   .books-reading-section {
-    padding: 20px;
+    height: 500px;
+    padding-left: 20px;
+    padding-right: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -140,3 +157,23 @@
     margin-top: 30px;
   }
   
+  .book-container {
+    margin-top: 10px;
+    height: 100%;
+    width: 100%;
+    background-color: brown;
+  }
+
+  .book-container-lonely {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    height: 100%;
+    width: 100%;
+  }
+
+  .books-lonely{
+    background-color: black;
+    height: 320px;
+    width: 200px;
+  }
