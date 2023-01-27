@@ -4,6 +4,15 @@
     margin-top: 20px;
     margin-bottom: 20px;
   }
+
+  .container-top {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    height: 100%;
+
+  }
   
   .profile-pic {
     border-radius: 10px;
@@ -25,7 +34,8 @@
   }
   
   .brief-history-section {
-  
+    padding: 20px;
+    margin-top: 100px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -102,6 +112,7 @@
   }
   
   .vanity-grid {
+    padding: 20px;
     display: grid;
     height: 500px;
     width: 100%;
@@ -112,6 +123,7 @@
   }
   
   .books-read-section {
+    padding: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -120,6 +132,7 @@
   }
   
   .books-reading-section {
+    padding: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
