@@ -22,7 +22,12 @@ export default function Projects() {
       img: "",
       path: "projects/northcoders-news",
     },
-    { name: "Salford Red Devils", type: "MOTION DESIGN", img: "" },
+    {
+      name: "Salford Red Devils",
+      type: "MOTION DESIGN",
+      img: "",
+      path: "projects/salford-red-devils",
+    },
   ];
   return (
     <>
