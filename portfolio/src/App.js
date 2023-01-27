@@ -6,6 +6,7 @@ import WeatherWidget from "./components/projects/WeatherWidget";
 import Calculator from "./components/projects/Calculator";
 import Hangman from "./components/projects/Hangman";
 import NorthcodersNews from "./components/projects/NorthcodersNews";
+import SalfordDevils from "./components/projects/SalfordDevils";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
@@ -24,6 +25,10 @@ function App() {
         <Route
           path="/projects/northcoders-news"
           element={<NorthcodersNews />}
+        ></Route>
+        <Route
+          path="/projects/salford-red-devils"
+          element={<SalfordDevils />}
         ></Route>
         <Route path="about" element={<About />}></Route>
         <Route path="contact" element={<Contact />}></Route>
