@@ -15,39 +15,143 @@ h1 {
   font-family: 'Butler';
 }
 
-p {
-  font-size: medium
+@media (min-width: 1000px) { 
+  p {
+    font-size: 20px;
+  }
+
+  li {
+    font-size: 20px;
+  }
+  
+  #root {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    height: 100vh;
+    min-width: 1000px;
+    width: 100vw;
+  }
+  
+  .app {
+    width: 100%;
+    padding: 20px;
+  }
+  
+  
+  .weather-widget {
+    padding: 0px;
+  }
+  
+  nav {
+  min-height: 70px;
+  }
+  
+  .nav-bar {
+    background-color: rgb(8, 8, 8);
+  }
+  
+  .nav-bar li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+  }
 }
 
-#root {
-  display: flex;
-  flex-direction: column;
-  /* justify-content: space-evenly; */
-  align-items:center;
-  height: 100vh;
-}
-
-.app {
-  width: 100%;
-  padding: 20px;
-}
 
 
-.weather-widget {
-  padding: 0px;
+
+
+
+
+/* tablet */
+@media (min-width: 500px) and (max-width: 1000px) {
+  p {
+    font-size: 20px;
+  }
+
+  li {
+    font-size: 20px;
+  }
+  
+  #root {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    height: 100vh;
+    min-width: 500px;
+    max-width: 1000px
+  }
+  
+  .app {
+    width: 100%;
+    padding: 20px;
+  }
+  
+  
+  .weather-widget {
+    padding: 0px;
+  }
+  
+  nav {
+  min-height: 70px;
+  }
+  
+  .nav-bar {
+    background-color: rgb(8, 8, 8);
+  }
+  
+  .nav-bar li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+  }
+
 }
 
-nav {
-min-height: 70px;
-}
+/* mobile */
+@media (min-width: 360px) and (max-width: 500px) {
 
-.nav-bar {
-  background-color: rgb(8, 8, 8);
-}
+  p {
+    font-size: medium
+  }
+  
+  #root {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-evenly; */
+    align-items:center;
+    height: 100vh;
+  }
+  
+  .app {
+    width: 100%;
+    padding: 20px;
+  }
+  
+  
+  .weather-widget {
+    padding: 0px;
+  }
+  
+  nav {
+  min-height: 70px;
+  }
+  
+  .nav-bar {
+    background-color: rgb(8, 8, 8);
+  }
+  
+  .nav-bar li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+  }
+ }
 
-.nav-bar li {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-decoration: none;
-}
+
+
+

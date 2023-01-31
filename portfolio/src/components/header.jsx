@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import "../style/header.css";
+import twitter from "../images/social-icons/twitter.png";
 export default function Header() {
   return (
     <>
@@ -26,7 +27,11 @@ export default function Header() {
               <p>Contact</p>
             </Link>
           </li>
-          <li>Twitter</li>
+          <li>
+            <a href="https://twitter.com/LewisWoods0" target="blank">
+              <img src={twitter} height="23px" width="23px" />
+            </a>
+          </li>
         </ul>
       </nav>
     </>
