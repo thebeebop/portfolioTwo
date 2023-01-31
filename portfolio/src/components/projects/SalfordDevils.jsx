@@ -2,6 +2,33 @@ import "../../style/projects-style/salford-devils.css";
 import "../../style/projects-style/northcoders-news.css";
 import { useState, useRef, useEffect } from "react";
 import { Element, scroller } from "react-scroll";
+import ae from "../../images/Tech-images/ae.jpg";
+import ai from "../../images/Tech-images/ai.jpg";
+import pr from "../../images/Tech-images/pr.png";
+import video from "../../videos/SRD video.mp4";
+import arrow from "../../images/small icons/arrow.png";
+import twit from "../..//images/small icons/twit.png";
+import storyBoardOne from "../../images/salford-devils/story-board-1.jpg";
+import storyBoardTwo from "../../images/salford-devils/story-board-2.jpg";
+import storyBoardThree from "../../images/salford-devils/story-board-3.jpg";
+import storyBoardFour from "../../images/salford-devils/story-board-4.jpg";
+import storyBoardFive from "../../images/salford-devils/story-board-5.jpg";
+import tridentOne from "../../images/salford-devils/trident-1.jpg";
+import tridentTwo from "../../images/salford-devils/trident 2.jpg";
+import tridentThree from "../../images/salford-devils/trident 3.jpg";
+import illustrator from "../../images/salford-devils/illustrator.jpg";
+import afterEffects from "../../images/salford-devils/after-effects.jpg";
+import premierPro from "../../images/salford-devils/premier-pro.png";
+import sfx from "../../images/salford-devils/sfx.jpg";
+import puppetPins from "../../images/salford-devils/puppet-pins.jpg";
+<div className="main-image-two">
+  <img
+    src={storyBoardThree}
+    height="100%"
+    width="100%"
+    style={{ borderRadius: 10 }}
+  />
+</div>;
 
 export default function SalfordDevils() {
   const [bool, setBool] = useState(false);
@@ -20,51 +47,86 @@ export default function SalfordDevils() {
     <>
       <Element name="top"></Element>
       <div className="mother-container">
-        <header className="header">
-          <div className="main-image">
-            <img height="100%" alt="repeating video of app in use" />
-            <div className="button-container">
-              <div className="github-container">
-                <img className="github-img" alt="" />
-              </div>
-            </div>
+        <header className="header" id="devils-header">
+          <div className="main-video">
+            <video
+              src={video}
+              type="video/mp4"
+              height="100%"
+              width="100%"
+              alt="Video of animation."
+              controls
+            />
           </div>
           <div className="title-container">
             <h1 className="main-title">Salford Red Devils</h1>
-            <p>
+            <p className="devils-sub-title">
               A short 30 second animation created for the Salford Red Devil's
               social media platforms to promote the launch of their new logo.
             </p>
+            <div className="twitter-container">
+              <a
+                href="https://twitter.com/SalfordDevils/status/1327238031586234369"
+                target="blank"
+              >
+                <img src={twit} height="25px" width="25px" />
+              </a>
+            </div>
           </div>
         </header>
         <div className="container">
           <section className="technologies-used">
             <h2>Tech Stack:</h2>
             <div className="grid-container">
-              <div className="mock-image">After Effects</div>
-              <div className="mock-image">Illustrator</div>
-              <div className="mock-image">Premier Pro</div>
+              <div className="tech-logos">
+                <img
+                  src={ae}
+                  height="100%"
+                  width="100%"
+                  style={{ borderRadius: 10 }}
+                />
+              </div>
+              <div className="tech-logos">
+                <img
+                  src={ai}
+                  height="100%"
+                  width="100%"
+                  style={{ borderRadius: 10 }}
+                />
+              </div>
+              <div className="tech-logos">
+                <img
+                  src={pr}
+                  height="100%"
+                  width="100%"
+                  style={{ borderRadius: 10 }}
+                />
+              </div>
             </div>
           </section>
-          <div className="continue-reading">
-            <p
-              onClick={() => {
-                setBool(!bool);
-                if (reading === "Continue Reading") {
-                  setReading("Close Reading");
-                } else {
-                  setReading("Continue Reading");
-                }
-              }}
-            >
-              {reading}
-            </p>
+          <div className={bool ? "hide-reading" : "show-reading"}>
+            <div className="reading-button-container">
+              <p
+                className="reading-button"
+                onClick={() => {
+                  setBool(!bool);
+                }}
+              >
+                Continue Reading
+              </p>
+              <img
+                src={arrow}
+                height="20px"
+                width="20px"
+                style={{ marginTop: 4, marginLeft: 4 }}
+              />
+            </div>
           </div>
         </div>
         <div className={bool ? "visible-element" : "hidden-element"}>
           <section className="goal" ref={targetRef}>
-            <h1 style={{ marginBottom: 10, fontSize: 30 }}>Goal:</h1>
-            <ul className="list">
+            <h1 className="section-titles">Goal:</h1>
+            <ul className="goal-list">
               <li>
                 Deliver a 30 second animation to help support the revealing of
                 the Salford Red Devils' new club logo, in less than 3 weeks.
@@ -72,18 +134,14 @@ export default function SalfordDevils() {
             </ul>
           </section>
 
-          <section className="development">
-            <h1 style={{ marginBottom: 10, fontSize: 30 }}>
-              Development Proces:
-            </h1>
+          <section className="development" id="devils-development">
+            <h1 className="section-titles">Development Process:</h1>
             <p style={{ marginBottom: 50 }}>
               During the final year of my university studies, in the midst of a
               global pandemic, I had the opportunity to work on a project for
               the Salford Red Devils.
             </p>
-            <h2 style={{ marginBottom: 10, fontSize: 20 }}>
-              Meeting with the Client
-            </h2>
+            <h2 className="devil-section-titles">Meeting with the Client</h2>
             <p style={{ marginBottom: 50 }}>
               I met with chairman and managing director at the Salford Red
               Devils, Paul King and others from his team. This was done
@@ -101,7 +159,7 @@ export default function SalfordDevils() {
               ahead with the project.
             </p>
 
-            <h2 style={{ marginBottom: 10, fontSize: 20 }}>Story Boards</h2>
+            <h2 className="devil-section-titles">Story Boards</h2>
             <p style={{ marginBottom: 50 }}>
               At this stage of the project I had a rough idea of how the
               animation was going to play out. I had a story board created and
@@ -109,11 +167,48 @@ export default function SalfordDevils() {
               working on the animation.
             </p>
 
-            <div className="main-image-two"></div>
-            <div className="main-image-two"></div>
-            <div className="main-image-two"></div>
+            <div className="main-image-two">
+              <img
+                src={storyBoardOne}
+                height="100%"
+                width="100%"
+                style={{ borderRadius: 15 }}
+              />
+            </div>
+            <div className="main-image-two">
+              <img
+                src={storyBoardTwo}
+                height="100%"
+                width="100%"
+                style={{ borderRadius: 15 }}
+              />
+            </div>
+            <div className="main-image-two">
+              <img
+                src={storyBoardThree}
+                height="100%"
+                width="100%"
+                style={{ borderRadius: 15 }}
+              />
+            </div>
+            <div className="main-image-two">
+              <img
+                src={storyBoardFour}
+                height="100%"
+                width="100%"
+                style={{ borderRadius: 15 }}
+              />
+            </div>
+            <div className="main-image-two" id="story-board-last">
+              <img
+                src={storyBoardFive}
+                height="100%"
+                width="100%"
+                style={{ borderRadius: 15 }}
+              />
+            </div>
 
-            <h2 style={{ marginBottom: 10, fontSize: 20, marginTop: 40 }}>
+            <h2 className="devil-section-titles">
               The last minute trident idea
             </h2>
             <p style={{ marginBottom: 50 }}>
@@ -129,24 +224,50 @@ export default function SalfordDevils() {
               metaphor of bridging the old traditons of the club with the newest
               of its conventions.
             </p>
-            <div className="main-image-two"></div>
-            <div className="main-image-two"></div>
-            <div className="main-image-two"></div>
-            <h2 style={{ marginBottom: 10, fontSize: 20, marginTop: 40 }}>
-              Illustrations
-            </h2>
-            <p style={{ marginBottom: 50 }}>
+            <div className="main-image-two" id="trident-one">
+              <img
+                src={tridentOne}
+                height="100%"
+                width="100%"
+                style={{ borderRadius: 15 }}
+              />
+            </div>
+            <div className="main-image-two" id="trident-two">
+              <img
+                src={tridentTwo}
+                height="100%"
+                width="100%"
+                style={{ borderRadius: 15 }}
+              />
+            </div>
+            <div className="main-image-two" id="trident-three">
+              <img
+                src={tridentThree}
+                height="100%"
+                width="100%"
+                style={{ borderRadius: 15 }}
+              />
+            </div>
+            <h2 className="devil-section-titles">Illustrations</h2>
+            <p>
               Adobe Illustrator was an effective tool that I utilised many times
               during this project. I used it to help me deconsruct the club's
               logo, especially the devil's face, into seperate moveable parts.
               This was important as it could allow me to manipulate the
               individual parts as needed when using after effects.
             </p>
-            <div className="main-image-two"></div>
-            <h2 style={{ marginBottom: 10, fontSize: 20, marginTop: 40 }}>
-              Animations
-            </h2>
-            <p style={{ marginBottom: 50 }}>
+
+            <div className="main-image-two" id="devil-illustrator">
+              <img
+                src={illustrator}
+                height="100%"
+                width="100%"
+                style={{ borderRadius: 15 }}
+              />
+            </div>
+
+            <h2 className="devil-section-titles">Animations</h2>
+            <p>
               After Effects was used for almost all of the heavy lifting on this
               project. I found it to be an incredibly powerful tool, providing
               me with a variety of different methods for tackling this project.
@@ -159,58 +280,83 @@ export default function SalfordDevils() {
               the fire, wind and lightning effects, I utilised a 2D effects
               library which I dowloaded from the internet.
             </p>
-            <div className="main-image-two"></div>
+            <div className="main-image-two" id="after-effects">
+              <img
+                src={afterEffects}
+                height="100%"
+                width="100%"
+                style={{ borderRadius: 15 }}
+              />
+            </div>
 
-            <h2 style={{ marginBottom: 10, fontSize: 20, marginTop: 40 }}>
-              Putting it all together
-            </h2>
+            <h2 className="devil-section-titles">Putting it all together</h2>
             <p style={{ marginBottom: 50 }}>
               As the animation sequences were created in seperate chunks, I used
               Premier Pro to stitch the sequences together to create one
               cohesive animation.
             </p>
-            <div className="main-image-two"></div>
+            <div className="main-image-two" id="premier-pro">
+              <img
+                src={premierPro}
+                height="100%"
+                width="100%"
+                style={{ borderRadius: 15 }}
+              />
+            </div>
 
-            <h2 style={{ marginBottom: 10, fontSize: 20, marginTop: 40 }}>
-              Sound Effects
-            </h2>
+            <h2 className="devil-section-titles">Sound Effects</h2>
             <p style={{ marginBottom: 50 }}>
               The sound design was created using Premier Pro. Most of the sound
               effects were sourced from a free online sound effects library.
               Some of the sounds inlcuding those of the crowd chants were
               provided by the Salford Red Devils.
             </p>
-            <div className="main-image-two"></div>
+            <div className="main-image-two" id="sound-effects">
+              <img
+                src={sfx}
+                height="100%"
+                width="100%"
+                style={{ borderRadius: 15 }}
+              />
+            </div>
           </section>
 
-          <section className="challenges">
-            <h1 style={{ marginBottom: 10, fontSize: 30 }}>Challenges:</h1>
+          <section className="challenges" id="devils-challenges">
+            <h1 className="section-titles">Challenges:</h1>
             <p style={{ marginBottom: 0 }}>
               Animating the devil's face proved to be a very technically tricky
               challenge. I wanted the face to look as organic as possible as to
               avoid that South Park character look.
             </p>
-            <ul className="list">
+            <p className="solution-title">
+              <strong>SOLUTION:</strong>
+            </p>
+            <ul className="solution-list">
               <li>
-                <p>
-                  <strong>SOLUTION:</strong> After much research I managed to
-                  find a way to turn static 2D images into animated objects. I
-                  used the pin tool in after effects which allowed me to divide
-                  and section off parts of the image whilst using keyframes to
-                  distort and manipulate the image as needed.
-                </p>
+                After much research I managed to find a way to turn static 2D
+                images into animated objects. I used the pin tool in after
+                effects which allowed me to divide and section off parts of the
+                image whilst using keyframes to distort and manipulate the image
+                as needed.
               </li>
             </ul>
-            <div className="main-image-two"></div>
+            <div className="main-image-two" id="puppet-pins">
+              <img
+                src={puppetPins}
+                height="100%"
+                width="100%"
+                style={{ borderRadius: 15 }}
+              />
+            </div>
           </section>
 
           <section className="result">
-            <h1 style={{ marginBottom: 10, fontSize: 30 }}>Result:</h1>
+            <h1 className="section-titles">Result:</h1>
             <p>
               A 30 second animation used across all Salford Red Devils media
               accounts, attracting 50K+ views on their twitter account.
             </p>
-            <ul className="list">
+            <ul className="result-list">
               <li>
                 Adobe Illustrator was used to deconstruct and recreate elements
                 of the original club logo.
@@ -226,8 +372,8 @@ export default function SalfordDevils() {
           </section>
 
           <section className="what-i-learnt">
-            <h1 style={{ marginTop: 20, fontSize: 30 }}>What I learnt:</h1>
-            <ul className="list">
+            <h1 className="section-titles">What I learnt:</h1>
+            <ul className="i-learnt-list">
               <li>
                 How to take charge and manage all aspects of a project,
                 independently.
@@ -241,15 +387,15 @@ export default function SalfordDevils() {
                 How to create animations using after effects and premier pro.
               </li>
             </ul>
-            <p
-              className="continue-reading"
-              onClick={() => {
-                scroller.scrollTo("top", { smooth: true });
-              }}
-            >
-              Back to Top
-            </p>
           </section>
+          <p
+            className="back-to-top"
+            onClick={() => {
+              scroller.scrollTo("top", { smooth: true });
+            }}
+          >
+            Back to Top
+          </p>
         </div>
       </div>
     </>

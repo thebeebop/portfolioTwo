@@ -1,57 +1,59 @@
 import "../style/contact.css";
+import github from "../images/Tech-images/github.jpg";
+import linkedIn from "../images/social-icons/linkedin.png";
+import email from "../images/small icons/email.png";
+import phone from "../images/small icons/phone.png";
 
 export default function Contact() {
   return (
     <>
       <div className="mother-container-about">
         <div className="title">
-          <h1 style={{ fontSize: 50, textAlign: "center" }}>
-            Thanks for stopping by!
-          </h1>
+          <h1 className="contact-title">Thanks for stopping by!</h1>
+          <h2 className="contact-sub-title">
+            If you are interested in working with me, you can contact me via:
+          </h2>
         </div>
-        <h2
-          style={{
-            textAlign: "center",
-            marginTop: 0,
-            color: "rgb(0,0,0,0.5)",
-          }}
-        >
-          You can contact me via:
-        </h2>
 
         <div className="background">
-          <div className="contact-info-container">
-            <div className="card-small">
+          <div className="grid">
+            <div className="card-small" id="email">
               <div className="email-logo">
-                <img height="100%" width="100%" />
+                <img src={email} height="100%" width="100%" />
               </div>
               <p>lewis.woods16@outlook.com</p>
             </div>
-            <div className="card-small">
+            <div className="card-small" id="phone">
               <div className="phone-logo">
-                <img height="100%" width="100%" />
+                <img src={phone} height="100%" width="100%" />
               </div>
               <p>07896067711</p>
             </div>
-          </div>
-        </div>
-        <h2
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            aligntItems: "center",
-            height: 30,
-            color: "rgb(0,0,0,0.5)",
-          }}
-        >
-          -- AND --
-        </h2>
-        <div className="contact-info-container-two">
-          <div className="linked-in-logo">
-            <img height="100%" width="100%" />
-          </div>
-          <div className="github-logo">
-            <img height="100%" width="100%" />
+
+            <a
+              style={{ textDecoration: "none", color: "black" }}
+              href="https://github.com/thebeebop"
+              target="blank"
+            >
+              <div className="card-small" id="github">
+                <div className="phone-logo">
+                  <img src={github} height="100%" width="100%" />
+                </div>
+                <p>GitHub</p>
+              </div>
+            </a>
+            <a
+              style={{ textDecoration: "none", color: "black" }}
+              href="https://www.linkedin.com/in/lewis-woods-240046191/"
+              target="blank"
+            >
+              <div className="card-small" id="linked-in">
+                <div className="phone-logo">
+                  <img src={linkedIn} height="100%" width="100%" />
+                </div>
+                <p>LinkedIn</p>
+              </div>
+            </a>
           </div>
         </div>
       </div>

@@ -1,12 +1,21 @@
 import "../../style/projects-style/hangman.css";
 import { useState, useRef, useEffect } from "react";
 import { Element, scroller } from "react-scroll";
-import hangmanImgOne from "./../../images/hangman-f2.png";
-import hangmanImgTwo from "./../../images/hangman-f1.png";
+import hangmanImgOne from "./../../images/hangman/hangman-f2.png";
+import hangmanImgTwo from "./../../images/hangman/hangman-f1.png";
+import css from "../../images/Tech-images/css.jpg";
+import js from "../../images/Tech-images/js.jpg";
+import github from "../../images/Tech-images/github.jpg";
+import main from "../../images/hangman/main.png";
+import arrow from "../../images/small icons/arrow.png";
+import trello from "../../images/hangman/trello.png";
+import tldraw from "../../images/hangman/tldraw.png";
+import functions from "../../images/hangman/functions.png";
+import hiddenWord from "../../images/hangman/hidden-word.png";
+import illustrator from "../../images/hangman/illustrator.png";
 
 export default function Hangman() {
   const [bool, setBool] = useState(false);
-  const [reading, setReading] = useState("Continue Reading");
   const targetRef = useRef(null);
 
   useEffect(() => {
@@ -23,51 +32,80 @@ export default function Hangman() {
       <div className="mother-container">
         <header className="header">
           <div className="main-image">
-            <div className="black-banner-container">
-              <div className="black-banner"></div>
+            <img src={main} height="100%" width="100%" alt="main image" />
+          </div>
+          <div className="title-button-container">
+            <div className="title-container">
+              <h1 className="main-title">Hangman</h1>
+              <p className="sub-title">
+                A recreation of the original hangman as a web application.
+              </p>
             </div>
-            <img height="100%" alt="repeating video of app in use" />
             <div className="button-container">
               <div className="github-container">
-                <img className="github-img" alt="" />
+                <a
+                  href="https://github.com/thebeebop/Hangman-JS"
+                  target="blank"
+                >
+                  <img
+                    src={github}
+                    className="github-img"
+                    alt=""
+                    style={{ borderRadius: 10 }}
+                  />
+                </a>
               </div>
               <a href="https://man-hang-app.netlify.app/" target="blank">
                 <button className="button">View App</button>
               </a>
             </div>
           </div>
-          <div className="title-container">
-            <h1 className="main-title">Hangman</h1>
-            <p>A recreation of the original hangman as a web application.</p>
-          </div>
         </header>
         <div className="container">
           <section className="technologies-used">
             <h2>Tech Stack:</h2>
             <div className="grid-container">
-              <div className="mock-image">JS</div>
-              <div className="mock-image">CSS3</div>
+              <div className="tech-logos">
+                <img
+                  src={js}
+                  height="100%"
+                  width="100%"
+                  style={{ borderRadius: 10 }}
+                />
+              </div>
+              <div className="tech-logos">
+                <img
+                  src={css}
+                  height="100%"
+                  width="100%"
+                  style={{ borderRadius: 10 }}
+                />
+              </div>
             </div>
           </section>
-          <div className="continue-reading">
-            <p
-              onClick={() => {
-                setBool(!bool);
-                if (reading === "Continue Reading") {
-                  setReading("Close Reading");
-                } else {
-                  setReading("Continue Reading");
-                }
-              }}
-            >
-              {reading}
-            </p>
+          <div className={bool ? "hide-reading" : "show-reading"}>
+            <div className="reading-button-container">
+              <p
+                className="reading-button"
+                onClick={() => {
+                  setBool(!bool);
+                }}
+              >
+                Continue Reading
+              </p>
+              <img
+                src={arrow}
+                height="20px"
+                width="20px"
+                style={{ marginTop: 4, marginLeft: 4 }}
+              />
+            </div>
           </div>
         </div>
         <div className={bool ? "visible-element" : "hidden-element"}>
           <section className="goal" ref={targetRef}>
-            <h1 style={{ marginBottom: 10, fontSize: 30 }}>Goal:</h1>
-            <ul className="list">
+            <h1 className="section-titles">Goal:</h1>
+            <ul className="goal-list">
               <li>To become more familiar with the DOM.</li>
               <li>To better understand how to manipulate the DOM. </li>
               <li>
@@ -77,20 +115,34 @@ export default function Hangman() {
             </ul>
           </section>
 
-          <section className="development">
-            <h1 style={{ marginBottom: 10, fontSize: 30 }}>Initial Stages:</h1>
+          <section className="development" id="hangman-development">
+            <h1 className="section-titles">Initial Stages:</h1>
             <p style={{ marginBottom: 50 }}>
               I used the VSCode plug-in: TLDraw to design, arrange and workout
               the component state tree. I used Trello and the Kanban method to
               help organise and track my progress as I separated tasks into
               individual tickets
             </p>
-            <div className="main-image-two"></div>
-            <div className="main-image-two"></div>
+            <div className="main-image-two" id="img-one">
+              <img
+                src={tldraw}
+                height="100%"
+                width="100%"
+                style={{ borderRadius: 15 }}
+              />
+            </div>
+            <div className="main-image-two" id="img-two">
+              <img
+                src={functions}
+                height="100%"
+                width="100%"
+                style={{ borderRadius: 15 }}
+              />
+            </div>
           </section>
 
           <section className="game-logic">
-            <h1 style={{ marginBottom: 10, fontSize: 30 }}>Game Logic:</h1>
+            <h1 className="section-titles">Game Logic:</h1>
             <p style={{ marginBottom: 0 }}>
               This game follows similar logic to that of the original hangman.
             </p>
@@ -130,8 +182,8 @@ export default function Hangman() {
             </ul>
           </section>
 
-          <section className="challenges">
-            <h1 style={{ marginBottom: 10, fontSize: 30 }}>Challenges:</h1>
+          <section className="challenges" id="hangman-challenges">
+            <h1 className="section-titles">Challenges:</h1>
             <p style={{ marginBottom: 50 }}>
               Tracking the inputted characters from the player, comparing them
               with the characters in the hidden word and then discerning between
@@ -139,87 +191,122 @@ export default function Hangman() {
               correctly gussed characters to the player in real time was one of
               the more challenging aspects of this project.
             </p>
-            <div className="main-image-two"></div>
-            <p style={{ marginTop: 20 }}>
+            <div className="main-image-two" id="hangman-image-challenges">
+              <img
+                src={hiddenWord}
+                height="100%"
+                width="100%"
+                style={{ borderRadius: 15 }}
+              />
+            </div>
+            <p className="solution-title">
               <strong>Solution Part 1:</strong>
             </p>
-            <ul className="list">
-              <li>
-                <p>
-                  The inputted characters from the user were filtered through a
-                  function that would take the input as one argument.
-                </p>
-              </li>
-              <li>
-                <p>
-                  This inputted character was then checked against the
-                  characters within the hidden word using the .includes array
-                  method, which was stored as a global array variable.
-                </p>
-              </li>
-              <li>
-                <p>
-                  If the character inputted by the player was gussed correctly,
-                  this would be pushed to a global array variable that was
-                  keeping track of the correctly gussed characters.
-                </p>
-              </li>
-            </ul>
-            <div className="main-image-two">
-              <img src={hangmanImgOne} height="100%" width="100%" alt="" />
+            <div className="solution-one">
+              <ul className="solution-list">
+                <li>
+                  <p>
+                    The inputted characters from the user were filtered through
+                    a function that would take the input as one argument.
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    This inputted character was then checked against the
+                    characters within the hidden word using the .includes array
+                    method, which was stored as a global array variable.
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    If the character inputted by the player was gussed
+                    correctly, this would be pushed to a global array variable
+                    that was keeping track of the correctly gussed characters.
+                  </p>
+                </li>
+              </ul>
             </div>
 
-            <p style={{ marginTop: 20 }}>
+            <div className="main-image-two" id="solution-img-one">
+              <img
+                src={hangmanImgOne}
+                height="100%"
+                width="100%"
+                alt=""
+                style={{ borderRadius: 15 }}
+              />
+            </div>
+
+            <p className="solution-title">
               <strong>Solution Part 2:</strong>
             </p>
-            <ul className="list">
-              <li>
-                <p>
-                  A second function handled the functionality that would reveal
-                  a correctly gussed character to the player. If a player had
-                  gussed correctly, the game would have to reconstruct the
-                  obscured word to now include that new character.
-                </p>
-              </li>
-              <li>
-                <p>
-                  A .forEach method was used that would iterate through the
-                  characters of the hidden word. This method would use
-                  conditional statements to then check each character of the
-                  hidden word array and compare them with the global array that
-                  was keeping track of the correctly gussed characters.
-                </p>
-              </li>
-              <li>
-                <p>
-                  If a correctly gussed character was present, this would then
-                  replace all obscured charaters '-' in the hidden word array
-                  with the correctly guessed characters.
-                </p>
-              </li>
-            </ul>
-            <div className="main-image-two">
-              <img src={hangmanImgTwo} height="100%" width="100%" alt="" />
+
+            <div className="solution-two">
+              <ul className="solution-list">
+                <li>
+                  <p>
+                    A second function handled the functionality that would
+                    reveal a correctly gussed character to the player. If a
+                    player had gussed correctly, the game would have to
+                    reconstruct the obscured word to now include that new
+                    character.
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    A .forEach method was used that would iterate through the
+                    characters of the hidden word. This method would use
+                    conditional statements to then check each character of the
+                    hidden word array and compare them with the global array
+                    that was keeping track of the correctly gussed characters.
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    If a correctly gussed character was present, this would then
+                    replace all obscured charaters '-' in the hidden word array
+                    with the correctly guessed characters.
+                  </p>
+                </li>
+              </ul>
+            </div>
+
+            <div className="main-image-two" id="solution-img-two">
+              <img
+                src={hangmanImgTwo}
+                height="100%"
+                width="100%"
+                alt=""
+                style={{ borderRadius: 15 }}
+              />
             </div>
           </section>
 
           <section className="hangman-illustration">
-            <h1 style={{ marginBottom: 10, fontSize: 30 }}>Illustration</h1>
+            <h1 className="section-titles">Illustration</h1>
             <p style={{ marginBottom: 50 }}>
               I used Adobe Illustrator to create the hangman illustration. I
               then seperated this illustration into 10 unique layers, allowing
               the layers to be stacked on top of eachother.
             </p>
-            <div className="main-image-two"></div>
+            <div className="main-image-two" id="hangman-img">
+              <img
+                src={illustrator}
+                height="100%"
+                width="100%"
+                style={{ borderRadius: 15 }}
+              />
+            </div>
           </section>
 
           <section className="result">
-            <h1 style={{ marginBottom: 10, fontSize: 30 }}>Result:</h1>
-            <p>
-              A fully functioning game of Hangman, built with vanilla JavaScript
-              and vanilla CSS.
-            </p>
-            <ul className="list">
+            <h1 className="section-titles">Result:</h1>
+
+            <ul className="result-list">
+              <li>
+                A fully functioning game of Hangman, built with vanilla
+                JavaScript and vanilla CSS.
+              </li>
               <li>
                 HTML5 and CSS3 were used to build and style the application.
               </li>
@@ -228,8 +315,8 @@ export default function Hangman() {
           </section>
 
           <section className="what-i-learnt">
-            <h1 style={{ marginTop: 20, fontSize: 30 }}>What I learnt:</h1>
-            <ul className="list">
+            <h1 className="section-titles">What I learnt:</h1>
+            <ul className="i-learnt-list">
               <li>How to plan and make use of a state-component tree.</li>
               <li>
                 How to handle state and pass props to update state variables.
@@ -241,15 +328,15 @@ export default function Hangman() {
                 components.
               </li>
             </ul>
-            <p
-              className="continue-reading"
-              onClick={() => {
-                scroller.scrollTo("top", { smooth: true });
-              }}
-            >
-              Back to Top
-            </p>
           </section>
+          <p
+            className="back-to-top"
+            onClick={() => {
+              scroller.scrollTo("top", { smooth: true });
+            }}
+          >
+            Back to Top
+          </p>
         </div>
       </div>
     </>

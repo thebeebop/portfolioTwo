@@ -1,6 +1,12 @@
 import "../../style/projects-style/northcoders-news.css";
 import { useState, useRef, useEffect } from "react";
 import { Element, scroller } from "react-scroll";
+import css from "../../images/Tech-images/css.jpg";
+import react from "../../images/Tech-images/react.jpg";
+import reactRouter from "../../images/Tech-images/react-router.png";
+import axios from "../../images/Tech-images/axios.png";
+import github from "../../images/Tech-images/github.jpg";
+import arrow from "../../images/small icons/arrow.png";
 
 export default function NorthcodersNews() {
   const [bool, setBool] = useState(false);
@@ -21,32 +27,36 @@ export default function NorthcodersNews() {
       <div className="mother-container">
         <header className="header">
           <div className="main-image">
-            <div className="black-banner-container">
-              <div className="black-banner"></div>
-            </div>
             <img height="100%" alt="repeating video of app in use" />
-            <div className="button-container">
-              <div className="github-container">
-                <img className="github-img" alt="" />
-              </div>
-              <a href="https://the-daily-dose-nc.netlify.app/" target="blank">
-                <button className="button">View App</button>
-              </a>
-            </div>
           </div>
           <div className="title-container">
-            <h1 className="main-title">The Daily Dose</h1>
+            <h1 className="main-title">Northcoders News</h1>
             <p>
               A fully responsive web app built with React during the
               Northcoders' front-end project phase.
             </p>
           </div>
+          <div className="title-button-container">
+            <div className="button-container">
+              <div className="github-container">
+                <a href="https://github.com/thebeebop/nc-news" target="blank">
+                  <img
+                    src={github}
+                    className="github-img"
+                    alt=""
+                    style={{ borderRadius: 10 }}
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+
           <div className="important">
-            <h2>NOTE:</h2>
+            <h2>PLEASE NOTE:</h2>
             <p>
               As of 28/11/22 Heroku's free dynos, free Heroku Postgres and free
               Heroku Data was removed. As this app's API depended on this
-              service, this web app will no longer be available.
+              service, this web app will not be available for the moment.
             </p>
           </div>
         </header>
@@ -54,24 +64,50 @@ export default function NorthcodersNews() {
           <section className="technologies-used">
             <h2>Tech Stack:</h2>
             <div className="grid-container">
-              <div className="mock-image">React</div>
-              <div className="mock-image">React-router</div>
-              <div className="mock-image">CSS3</div>
+              <div className="tech-logos">
+                <img
+                  src={react}
+                  height="100%"
+                  width="100%"
+                  style={{ borderRadius: 10 }}
+                />
+              </div>
+              <div className="tech-logos">
+                <img
+                  src={reactRouter}
+                  height="100%"
+                  width="100%"
+                  style={{ borderRadius: 10 }}
+                />
+              </div>
+              <div className="tech-logos">
+                <img
+                  src={css}
+                  height="100%"
+                  width="100%"
+                  style={{ borderRadius: 10 }}
+                />
+              </div>
+              <div className="tech-logos">
+                <img
+                  src={axios}
+                  height="100%"
+                  width="100%"
+                  style={{ borderRadius: 10 }}
+                />
+              </div>
             </div>
           </section>
-          <div className="continue-reading">
-            <p
-              onClick={() => {
-                setBool(!bool);
-                if (reading === "Continue Reading") {
-                  setReading("Close Reading");
-                } else {
-                  setReading("Continue Reading");
-                }
-              }}
-            >
-              {reading}
-            </p>
+          <div className={bool ? "hide-reading" : "show-reading"}>
+            <div className="reading-button-container">
+              <p className="reading-button">! Under Maintenance</p>
+              <img
+                src={arrow}
+                height="20px"
+                width="20px"
+                style={{ marginTop: 4, marginLeft: 4 }}
+              />
+            </div>
           </div>
         </div>
         <div className={bool ? "visible-element" : "hidden-element"}>
@@ -164,7 +200,7 @@ export default function NorthcodersNews() {
               <li>How to make a responsive design using CSS3.</li>
             </ul>
             <p
-              className="continue-reading"
+              className="back-to-top"
               onClick={() => {
                 scroller.scrollTo("top", { smooth: true });
               }}
